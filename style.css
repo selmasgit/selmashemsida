@@ -14,7 +14,7 @@ html, body {
   
   a {
   text-decoration: none;
-  color: #ffffff;
+  color: #222222;
   }
 
   #tile {
@@ -27,34 +27,48 @@ html, body {
   }
 
   #tile .left {
-      padding: 0 0 0 3em;
       position: relative;
       left: 0;
       height: 100%;
       width: 300px;
       background: #222222;
       display: flex;
+      text-align: center;
+  }
+
+  #tile .left .heading {
+      padding: 0 0 0 2em;
+      text-align: left;
+      width: 100%;
   }
 
   #tile .right {
       position: relative;
       align-content: center;
-      justify-content: center;
+      justify-content: top;
+      text-align: center;
       display: flex;
       width: 100%;
-      background: #111111;
+      background: #d1d1d1;
+      flex-direction: column;
   }
 
-  #tile .inner {
+  #tile .right .inner {
+      color: #222222;
+      background: #f5f5f5; 
       text-align: center;
       text-justify: center;
+      width: 50%;
+      margin: 1em 0 0 0;
+      padding: 1em;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  #tile .inner .img {
-      flex: 1;
-      height: 300px;
-      width: 400px;
+  #tile .right .cover {
+      height: 40%;
+      width: 100%;
       justify-content: center;
       align-content: center;
-      object-fit: contain;
+      object-fit: cover;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
