@@ -1,0 +1,60 @@
+html, body {
+    height: 100vH;
+    width: 100vW;  
+    font-size: 14px;
+    font-family: "Century Gothic",Helvetica,Arial,sans-serif; 
+    color: #ffffff;
+    margin: 0px;
+    overflow: hidden;
+  }
+
+  h1 {
+      text-transform: uppercase;
+  }
+  
+  a {
+  text-decoration: none;
+  color: #ffffff;
+  }
+
+  #tile {
+      height: 100%;
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: left;
+  }
+
+  #tile .left {
+      padding: 0 0 0 3em;
+      position: relative;
+      left: 0;
+      height: 100%;
+      width: 300px;
+      background: #222222;
+      display: flex;
+  }
+
+  #tile .right {
+      position: relative;
+      align-content: center;
+      justify-content: center;
+      display: flex;
+      width: 100%;
+      background: #111111;
+  }
+
+  #tile .inner {
+      text-align: center;
+      text-justify: center;
+  }
+
+  #tile .inner .img {
+      flex: 1;
+      height: 300px;
+      width: 400px;
+      justify-content: center;
+      align-content: center;
+      object-fit: contain;
+  }
