@@ -10,11 +10,16 @@ html, body {
 
   h1 {
       text-transform: uppercase;
+      color: #ffffff;
+  }
+
+  h2 {
+      text-transform: uppercase;
+      color: #ffffff;
   }
   
   a {
-  text-decoration: none;
-  color: #222222;
+  color: #ffffff;
   }
 
   #tile {
