@@ -1,7 +1,7 @@
 var app = angular.module('selmashemsida', [])
 
 app.controller('indexController', ['$scope', '$timeout', function($scope, $timeout, $window, $http, $filter) {
-    $scope.currentPage = 'home.html';
+    $scope.currentPage = 'content/home.html';
     $scope.isLoading = false;
 
     $scope.changePage = function(page)
