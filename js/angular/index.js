@@ -9,6 +9,5 @@ app.controller('indexController', ['$scope', '$timeout', function($scope, $timeo
         $scope.isLoading = true;
         $scope.currentPage = page;
         $scope.isLoading = false;
-        toastrNotification.showNotification("Page changed!", 'success');
     };
 }]);

@@ -8,113 +8,41 @@ html, body {
     overflow: hidden;
   }
 
-  h1 {
-      text-transform: uppercase;
-      color: #ffffff;
-  }
+/** 01 Typeface **/
 
-  h2 {
-      text-transform: uppercase;
-      color: #ffffff;
-  }
-  
-  h3 {
+  headT{
     text-transform: uppercase;
     font-weight: bold;
   }
 
+/** 02 Main **/
 
-  a {
-  color: #333333;
+  #page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #cfcfc8;
+    background-size: cover;
   }
 
-  #tile {
-      height: 100%;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-content: center;
-      justify-content: left;
-      margin: 0;
+  #page .inner {
+    max-width: 400px;
+    color: #222222;
+    background: #f5f5f5; 
+    text-align: center;
+    margin: 1em;
+    margin-top: 5em;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  #tile .left {
-      position: relative;
-      left: 0;
-      height: 100%;
-      width: 300px;
-      background: #222222;
-      display: flex;
-      text-align: center;
-  }
-
-  #tile .left .heading {
-      padding: 0 0 0 2em;
-      text-align: left;
-      width: 100%;
-  }
-
-  #tile .right {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      background: #d1d1d1;
-      flex-direction: column;
-  }
-
-  #tile .right .inner {
-      color: #222222;
-      background: #f5f5f5; 
-      text-align: center;
-      margin: 1em;
-      padding: 1em;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  #tile .right .cover {
-      height: 40%;
-      width: 100%;
-      justify-content: center;
-      align-content: center;
-      object-fit: cover;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .header {
-      background: #222222;
-      height: 4em;
-      display: flex;
-      align-items: center;
-  }
-
-  .header .title {
-      position: relative;
-      padding: 0 0 0 1em;
-  }
-
-  .header .title h1 {
-      font-size: 1.5em;
-      text-transform: uppercase;
-      font-weight: bold;
-      margin: 0;
-  }
-
-  .header h2 {
-      font-size: .7em;
-      text-transform: uppercase;
-      font-weight: lighter;
-      margin: 0;
-  }
-
-  .header h2 a {
-    text-decoration: none;
-    color: #ffffff;  
-  }
-
-  iframe {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      border: 0;
-      padding: 0;
+  #page .inner h1 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
   }
